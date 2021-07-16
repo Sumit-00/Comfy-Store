@@ -11,8 +11,8 @@ import { Auth0Provider } from "@auth0/auth0-react";
 // ZMtYvxbSRnoZ0SHi2xzkdSW23bx4ILBT
 ReactDOM.render(
   <Auth0Provider
-    domain="dev-7pejujnu.us.auth0.com"
-    clientId="ZMtYvxbSRnoZ0SHi2xzkdSW23bx4ILBT"
+    domain={process.env.REACT_APP_AUTH_DOMAIN}
+    clientId={process.env.REACT_APP_AUTH_CLIENT_ID}
     redirectUri={window.location.origin}
     cacheLocation="localstorage"
   >
