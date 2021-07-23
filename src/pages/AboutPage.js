@@ -1,32 +1,31 @@
-import React from 'react'
-import styled from 'styled-components'
-import { PageHero } from '../components'
-import aboutImg from '../assets/hero-bcg.jpeg'
+import React from "react";
+import styled from "styled-components";
+import { PageHero } from "../components";
+import aboutImg from "../assets/hero-bcg.jpeg";
 
 const AboutPage = () => {
   return (
     <main>
-      <PageHero title='about' />
-      <Wrapper className='page section section-center'>
-        <img src={aboutImg} alt='nice desk' />
+      <PageHero title="about" />
+      <Wrapper className="page section section-center">
+        <img src={aboutImg} alt="nice desk" />
         <article>
-          <div className='title'>
+          <div className="title">
             <h2>our story</h2>
-            <div className='underline'></div>
+            <div className="underline"></div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-            quaerat, modi doloremque necessitatibus eum dolor nesciunt delectus,
-            voluptate blanditiis, obcaecati beatae ab aut ipsa consequuntur
-            tempora cumque. Ut quo enim vero odio minus nostrum eveniet,
-            doloribus veritatis dolorem unde ipsum, voluptatibus totam.
-            Explicabo, quas libero! Laborum incidunt minima consequatur ratione?
+            Your home is nothing if not personal. At Comfy Sloth, we're here to
+            help you create a space that reflects you and what you love. That
+            means forward-thinking, problem-solving design that unites value,
+            quality and responsible manufacturing. Because you should feel good
+            about your home—and how it comes together.
           </p>
         </article>
       </Wrapper>
     </main>
-  )
-}
+  );
+};
 
 const Wrapper = styled.section`
   display: grid;
@@ -54,5 +53,5 @@ const Wrapper = styled.section`
   @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr;
   }
-`
-export default AboutPage
+`;
+export default AboutPage;
